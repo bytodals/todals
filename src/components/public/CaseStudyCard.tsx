@@ -8,6 +8,10 @@ type CaseStudyCardProps = {
 export function CaseStudyCard({ project }: CaseStudyCardProps) {
   return (
     <article className="site-card project-card">
+      <div className="project-card__visual" aria-hidden="true">
+        <span>{project.result}</span>
+      </div>
+
       <div className="project-card__meta">
         <span>{project.category}</span>
         <span>•</span>

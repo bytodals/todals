@@ -25,6 +25,7 @@ export const projects: Project[] = [
       'A modular portfolio layout designed to keep the work readable, approachable, and easy to update.',
     year: '2026',
     tags: ['Next.js', 'Design System', 'Content Strategy'],
+    result: '+38% more contact clicks',
   },
   {
     slug: 'creator-dashboard',
@@ -35,6 +36,7 @@ export const projects: Project[] = [
       'A private dashboard concept for organizing tasks, drafts, and publishing queues without losing the creative flow.',
     year: '2026',
     tags: ['Dashboard', 'Workflow', 'Content Ops'],
+    result: '-24% less time planning posts',
   },
   {
     slug: 'social-proof-kit',
@@ -45,7 +47,14 @@ export const projects: Project[] = [
       'A small kit of modular page sections that can be mixed into a landing page without heavy rework.',
     year: '2025',
     tags: ['Components', 'Landing Page', 'Conversion'],
+    result: '3 modular sections reused everywhere',
   },
+]
+
+export const publicStats = [
+  { label: 'Projects shipped', value: '12+' },
+  { label: 'Avg turnaround', value: '5 days' },
+  { label: 'Focus', value: 'UX + Content' },
 ]
 
 export const testimonials = [

@@ -1,16 +1,16 @@
 export default function DashboardHomePage() {
   return (
-    <section className="site-grid site-grid--two">
+    <section className="site-grid site-grid--two dashboard-grid">
       <article className="dashboard-card">
-        <p className="site-kicker">OVERVIEW</p>
-        <h2>Private workspace</h2>
-        <p className="site-copy">Use this area for an internal homepage, notes, and task summaries.</p>
+        <p className="site-kicker">TODAY</p>
+        <h2>Focus</h2>
+        <p className="site-copy">Keep the dashboard lean: one place for tasks, links, and draft notes.</p>
       </article>
 
       <article className="dashboard-card">
-        <p className="site-kicker">STATUS</p>
-        <h2>Ready for modules</h2>
-        <p className="site-copy">Add content, links, or whatever other admin bits you need next.</p>
+        <p className="site-kicker">QUICK_ACTIONS</p>
+        <h2>Ready to use</h2>
+        <p className="site-copy">Add or edit weekly modules without the marketing fluff.</p>
       </article>
     </section>
   )

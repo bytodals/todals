@@ -1,9 +1,11 @@
 export default function DashboardLinksPage() {
   return (
-    <section className="site-card">
-      <p className="site-kicker">LINKS_MODULE</p>
-      <h1>Links</h1>
-      <p className="site-copy">Use this page for a link-in-bio, quick buttons, or a social profile hub.</p>
+    <section className="dashboard-module-stack">
+      <article className="dashboard-card">
+        <p className="site-kicker">LINKS</p>
+        <h2>Link hub</h2>
+        <p className="site-copy">Quick links and profile buttons live here.</p>
+      </article>
     </section>
   )
 }

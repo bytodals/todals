@@ -16,6 +16,7 @@ export type Project = {
   description: string
   year: string
   tags: string[]
+  result: string
 }
 
 export type CaseStudySection = {

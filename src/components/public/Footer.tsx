@@ -13,6 +13,10 @@ export function Footer() {
               {link.label}
             </Link>
           ))}
+
+          <Link href="mailto:hello@todals.com" className="muted">
+            hello@todals.com
+          </Link>
         </div>
       </div>
     </footer>
