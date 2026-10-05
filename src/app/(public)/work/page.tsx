@@ -8,13 +8,13 @@ export default function WorkPage() {
       <h1>Selected work</h1>
       <p className="site-copy">Case studies are organized by project and can later be filtered by type or outcome.</p>
 
-      <div className="site-actions" style={{ marginTop: '1.25rem' }}>
+      <div className="site-actions site-actions--work-filters">
         <button type="button" className="site-button site-button--ghost">All</button>
         <button type="button" className="site-button site-button--ghost">Brand</button>
         <button type="button" className="site-button site-button--ghost">Product</button>
       </div>
 
-      <div className="project-grid" style={{ marginTop: '1.5rem' }}>
+      <div className="project-grid project-grid--work">
         {projects.map((project) => (
           <CaseStudyCard key={project.slug} project={project} />
         ))}

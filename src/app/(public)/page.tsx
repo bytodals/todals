@@ -8,17 +8,45 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        title="Clean portfolio design for people who want to move fast and still look sharp."
-        summary="I design mobile-first portfolio experiences, case studies, and practical dashboards that help visitors understand the work in seconds."
+        title="a prophecy gone slightly wrong"
+        eyebrow="CHRONICALLY ONLINE"
+        summary="Content. Context. Contradictions."
       />
 
       <section className="site-shell site-section">
-        <div className="site-card public-about">
+        <div className="site-card public-statement">
           <p className="site-kicker">WHO_I_AM</p>
-          <h2>Small team feel. One-person clarity.</h2>
-          <p className="site-copy">
-            I focus on strong typography, clear structure, and pages that tell the story quickly without making people work for it.
-          </p>
+          <div className="public-statement__content">
+            <p>
+              I exist in fragments across screens
+              <br /> thoughts half-formed and observations mid-thought, the specific loneliness of being visible to thousands while mostly unavailable to all of them.
+            </p>
+            <p>
+              Chronically ill and chronically online. That contradiction isn't a bug; it's where the work lives.
+            </p>
+            <p>
+              This space is where those pieces collect. What you're seeing is real, unfinished, and probably more honest than it should be.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="site-shell site-section">
+        <div className="site-shell__heading">
+          <div>
+            <p className="site-kicker">RECENT</p>
+            <h2>Selected pieces</h2>
+          </div>
+
+          <Link href="/work" className="site-link site-button--ghost">
+            View archive
+          </Link>
+        </div>
+
+        <div className="site-grid site-grid--two">
+          {projects.slice(0, 2).map((project) => (
+            <CaseStudyCard key={project.slug} project={project} />
+          ))}
         </div>
       </section>
 
@@ -27,31 +55,38 @@ export default function HomePage() {
       <section className="site-shell site-section">
         <div className="site-shell__heading">
           <div>
-            <p className="site-kicker">FEATURED_WORK</p>
-            <h2>Three projects worth your time</h2>
+            <p className="site-kicker">ELSEWHERE</p>
+            <h2>Find me in the feeds</h2>
           </div>
-
-          <Link href="/work" className="site-link site-button--ghost">
-            See all work
-          </Link>
         </div>
 
-        <div className="site-grid site-grid--two">
-          {projects.map((project) => (
-            <CaseStudyCard key={project.slug} project={project} />
-          ))}
+        <div className="public-socials">
+          <Link href="https://instagram.com/todals" className="social-link">
+            Instagram
+          </Link>
+          <Link href="https://threads.net/@todals" className="social-link">
+            Threads
+          </Link>
+          <Link href="https://tiktok.com/@todals" className="social-link">
+            TikTok
+          </Link>
+          <Link href="https://throne.com/todals" className="social-link">
+            Support
+          </Link>
+          <Link href="https://ko-fi.com/todals" className="social-link">
+            Ko-fi
+          </Link>
         </div>
       </section>
 
       <section className="site-shell site-section">
-        <div className="site-card public-cta">
-          <p className="site-kicker">LETS_BUILD</p>
-          <h2>Need a public site that earns the click?</h2>
-          <p className="site-copy">This starter structure is ready for your own visuals, case studies, and dashboard modules.</p>
+        <div className="site-card public-footer-cta">
+          <p className="site-kicker">CTA</p>
+          <h2>Want to collaborate?</h2>
+          <p className="site-copy">Or just send a message. Either way, I read everything.</p>
           <div className="site-actions">
-            <Link href="/contact" className="site-button site-button--primary">Book a call</Link>
-            <Link href="/login" className="site-button site-button--ghost">Login</Link>
-          </div>
+            <Link href="/contact" className="site-button site-button--primary">Contact me</Link>
+                    </div>
         </div>
       </section>
     </>

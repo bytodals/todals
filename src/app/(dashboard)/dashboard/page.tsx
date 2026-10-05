@@ -1,17 +1,24 @@
+import { IdeaVault } from '@/components/dashboard/IdeaVault'
+import { Archive } from '@/components/dashboard/Archive'
+import { QuickLinks } from '@/components/dashboard/QuickLinks'
+import { NotesSpace } from '@/components/dashboard/NotesSpace'
+import { EnergyLog } from '@/components/dashboard/EnergyLog'
+
 export default function DashboardHomePage() {
   return (
-    <section className="site-grid site-grid--two dashboard-grid">
-      <article className="dashboard-card">
-        <p className="site-kicker">TODAY</p>
-        <h2>Focus</h2>
-        <p className="site-copy">Keep the dashboard lean: one place for tasks, links, and draft notes.</p>
-      </article>
+    <div className="dashboard-home">
+      <header className="dashboard-header">
+        <h1>Your creative space</h1>
+        <p>Everything you need to keep creating, even on hard days.</p>
+      </header>
 
-      <article className="dashboard-card">
-        <p className="site-kicker">QUICK_ACTIONS</p>
-        <h2>Ready to use</h2>
-        <p className="site-copy">Add or edit weekly modules without the marketing fluff.</p>
-      </article>
-    </section>
+      <main className="dashboard-grid">
+        <IdeaVault />
+        <QuickLinks />
+        <NotesSpace />
+        <Archive />
+        <EnergyLog />
+      </main>
+    </div>
   )
 }

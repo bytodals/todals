@@ -8,7 +8,7 @@ export function Header({ title, description }: HeaderProps) {
     <header className="dashboard-topbar">
       <div>
         <p className="site-kicker">DASHBOARD_HOME</p>
-        <h1 style={{ margin: '0.75rem 0 0.25rem', fontSize: 'clamp(1.6rem, 2.5vw, 2.2rem)' }}>{title}</h1>
+        <h1 className="dashboard-topbar__title">{title}</h1>
         <p className="site-copy">{description}</p>
       </div>
 

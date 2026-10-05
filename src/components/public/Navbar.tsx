@@ -6,7 +6,7 @@ export function Navbar() {
     <header className="portfolio-nav portfolio-nav--public">
       <div className="site-shell portfolio-nav__inner">
         <Link href="/" className="portfolio-logo">
-          {siteName}
+          {siteName.toLowerCase()}
         </Link>
 
         <nav className="portfolio-links" aria-label="Primary navigation">
@@ -16,9 +16,6 @@ export function Navbar() {
             </Link>
           ))}
 
-          <Link href="/login" className="portfolio-links__login">
-            Login
-          </Link>
         </nav>
       </div>
     </header>

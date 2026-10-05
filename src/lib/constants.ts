@@ -10,9 +10,11 @@ export const navItems: NavItem[] = [
 ]
 
 export const socialLinks: SocialLink[] = [
-  { label: 'Email', href: 'mailto:hello@todals.com' },
-  { label: 'Instagram', href: 'https://instagram.com' },
-  { label: 'LinkedIn', href: 'https://linkedin.com' },
+  { label: 'Instagram', href: 'https://instagram.com/todals' },
+  { label: 'Threads', href: 'https://threads.net/@todals' },
+  { label: 'TikTok', href: 'https://tiktok.com/@todals' },
+  { label: 'Throne', href: 'https://throne.com/todals' },
+  { label: 'Ko-fi', href: 'https://ko-fi.com/todals' },
 ]
 
 export const projects: Project[] = [
